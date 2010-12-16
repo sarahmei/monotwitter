@@ -19,7 +19,6 @@ class StatusUpdatesController < ApplicationController
           message = result['text']
 
           translate_url = "https://www.googleapis.com/language/translate/v2?key=AIzaSyCx0e_YdOi5wcrUES0c-1RaK9eXVoIs9IY&source=#{lang}&target=en&q=#{URI.encode(message)}"
-puts translate_url
           goog = EM::HttpRequest.new(translate_url).get
 
           goog.callback {

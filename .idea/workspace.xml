@@ -24,19 +24,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="44" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.5185184">
+            <state line="11" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.3256579">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="status_updates_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="status_updates_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/status_updates_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="77" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.52605045">
+            <state line="20" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="-7.5185184">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/status_update.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/status_updates/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20101216035528_create_status_updates.rb" />
         <option value="$PROJECT_DIR$/app/controllers/status_updates_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -588,16 +588,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/status_updates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.5185184">
+        <state line="20" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="-7.5185184">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/status_updates_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="77" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.52605045">
+        <state line="11" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.3256579">
           <folding />
         </state>
       </provider>

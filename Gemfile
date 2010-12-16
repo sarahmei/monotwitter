@@ -9,6 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'thin'
 gem 'em-http-request', :require => 'em-http'
+gem 'pg'
 # Use unicorn as the web server
 # gem 'unicorn'
 
