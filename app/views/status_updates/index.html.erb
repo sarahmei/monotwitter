@@ -9,8 +9,17 @@ SHOW ME:
     <tr>
       <td><%= image_tag status_update.image_url, :style => "height:48px;width:48px" %></td>
       <td><%= status_update.text %></td>
-      <td><%= status_update.twitter_name %></td>
-      <td><%= time_ago_in_words(status_update.post_date) %> ago</td>
+      <td><%= link_to status_update.twitter_name, "http://twitter.com/#{status_update.twitter_name}", :target => "_blank" %>
+        <br/>
+        <span style="font-size:10px">
+          (originally <%= status_update.language_code %>)
+        </span>
+      </td>
+      <td>
+        <span style="font-size:10px">
+          <%= link_to "#{time_ago_in_words(status_update.post_date)} ago", "http://twitter.com/#!/#{status_update.twitter_name}/status/#{status_update.twitter_guid}" %>
+        </span>
+      </td>
     </tr>
   <% end %>
 </table>

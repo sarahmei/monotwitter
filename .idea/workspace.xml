@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="status_updates_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="status_updates_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/status_updates_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="64" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.3512605">
+            <state line="20" column="64" selection-start="720" selection-end="720" vertical-scroll-proportion="-2.4444444">
               <folding />
             </state>
           </provider>
@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/status_updates/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.827586">
+            <state line="19" column="69" selection-start="723" selection-end="723" vertical-scroll-proportion="0.74113476">
               <folding />
             </state>
           </provider>
@@ -91,9 +91,9 @@
         <option value="$PROJECT_DIR$/app/models/status_update.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/status_updates/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20101216035528_create_status_updates.rb" />
         <option value="$PROJECT_DIR$/app/controllers/status_updates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/status_updates/index.html.erb" />
       </list>
     </option>
   </component>
@@ -581,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/status_updates/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.827586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20101216035528_create_status_updates.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="12" selection-start="118" selection-end="118" vertical-scroll-proportion="-2.4444444">
@@ -597,7 +590,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/status_updates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="64" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.3512605">
+        <state line="20" column="64" selection-start="720" selection-end="720" vertical-scroll-proportion="-2.4444444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/status_updates/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="69" selection-start="723" selection-end="723" vertical-scroll-proportion="0.74113476">
           <folding />
         </state>
       </provider>
