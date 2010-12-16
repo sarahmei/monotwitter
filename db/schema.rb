@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(:version => 20101216035528) do
 
   create_table "status_updates", :force => true do |t|
-    t.string   "text"
+    t.text     "text"
     t.string   "twitter_guid"
     t.string   "twitter_name"
     t.string   "image_url"

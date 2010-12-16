@@ -1,7 +1,7 @@
 class CreateStatusUpdates < ActiveRecord::Migration
   def self.up
     create_table :status_updates do |t|
-      t.string :text
+      t.text :text
       t.string :twitter_guid
       t.string :twitter_name
       t.string :image_url

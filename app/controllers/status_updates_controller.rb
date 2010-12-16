@@ -10,7 +10,7 @@ class StatusUpdatesController < ApplicationController
 
     http.callback do
       StatusUpdate.delete_all
-      results = JSON.parse(http.response)["results"]
+      results = JSON.parse(http.response)["results"] || []
       results.each do |result|
         status_update =
           StatusUpdate.find_or_create_by_twitter_guid(result["id_str"])
@@ -22,23 +22,23 @@ class StatusUpdatesController < ApplicationController
           goog = EM::HttpRequest.new(translate_url).get
 
           goog.callback {
-            message = JSON.parse(goog.response)["data"]["translations"].first["translatedText"]
-            puts message.to_yaml
+            goog_response = JSON.parse(goog.response)
+            translated_message = goog_response["data"]["translations"].first["translatedText"] rescue message
             status_update.update_attributes(
-              :text         => message,
+              :text         => translated_message,
               :twitter_name => result["from_user"],
               :post_date    => Time.parse(result["created_at"]),
-              :image_url    => result["profile_image_url"],
+              :image_url    => result["profile_image_url"] || "",
               :language_code => result["iso_language_code"]
             )
           }
 
           goog.errback{
             status_update.update_attributes(
-              :text         => result['text'],
+              :text         => message,
               :twitter_name => result["from_user"],
               :post_date    => Time.parse(result["created_at"]),
-              :image_url    => result["profile_image_url"],
+              :image_url    => result["profile_image_url"] || "",
               :language_code => result["iso_language_code"]
             )
           }
