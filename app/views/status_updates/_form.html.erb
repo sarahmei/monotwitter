@@ -1,0 +1,29 @@
+<%= form_for(@status_update) do |f| %>
+  <% if @status_update.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@status_update.errors.count, "error") %> prohibited this status_update from being saved:</h2>
+
+      <ul>
+      <% @status_update.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :update %><br />
+    <%= f.text_area :update %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter_guid %><br />
+    <%= f.text_field :twitter_guid %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter_name %><br />
+    <%= f.text_field :twitter_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

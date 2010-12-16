@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Update:</b>
+  <%= @status_update.update %>
+</p>
+
+<p>
+  <b>Twitter guid:</b>
+  <%= @status_update.twitter_guid %>
+</p>
+
+<p>
+  <b>Twitter name:</b>
+  <%= @status_update.twitter_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_status_update_path(@status_update) %> |
+<%= link_to 'Back', status_updates_path %>
