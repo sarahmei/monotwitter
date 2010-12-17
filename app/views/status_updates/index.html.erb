@@ -8,7 +8,7 @@ SHOW ME:
   <% @status_updates.each do |status_update| %>
     <tr>
       <td><%= image_tag status_update.image_url, :style => "height:48px;width:48px" %></td>
-      <td><%= status_update.text %></td>
+      <td><%= raw status_update.text %></td>
       <td><%= link_to status_update.twitter_name, "http://twitter.com/#{status_update.twitter_name}", :target => "_blank" %>
         <br/>
         <span style="font-size:10px">
